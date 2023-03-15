@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+</head>
+<body>
+  <main>
+    <header id="hero" class="h-[70vh] bg-cover bg-no-repeat bg-header-mobile md:bg-header-desktop md:h-screen md:bg-cover">
+      <div class="container md:mx-8 py-12 px-6">
+        <nav class="flex items-center justify-between font-bold text-white">
+          <img src="./images/logo.svg" alt="logo" class="md:w-56">
+
+          <!-- Menu -->
+          <div class="hidden h-14 font-barlow md:flex md:space-x-12 text-xl justify-center items-center">
+            <div class="group">
+              <a href="#" aria-label="Read more about sunnyside">About</a>
+              <div class="mx-2 group-hover:border-b group.hover:border-blue-50"></div>
+            </div>
+            <div class="group">
+              <a href="#" aria-label="Read more about our services">Services</a>
+              <div class="mx-2 group-hover:border-b group.hover:border-blue-50"></div>
+            </div>
+            <div class="group">
+              <a href="#" aria-label="Read more about our projects">Projects</a>
+              <div class="mx-2 group-hover:border-b group.hover:border-blue-50"></div>
+            </div>
+            <button class="bg-white text-veryBlue rounded-full py-4 px-6 font-fraunces uppercase text-base hover:bg-opacity-40 hover:text-white duration-150">Contact</button>
+          </div>
+          <div class="md:hidden">
+            <button id="menu-btn" type="button" class="z-40 block hamburger md:hidden focus:outline-none">
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+        <div id="menu" class="absolute top-[15vh] left-[24px] flex-col text-center items-center h-[40vh] py-11  hidden space-y-6 text-xl text-darkGrayBlue bg-white z-10 transition-[display] ease-in-out">
+          <a href="#" aria-label="Read more about sunnyside" class="hover:text-darkGray" role="menuitem">About</a>
+          <a href="#" aria-label="Read about services at sunnyside" class="hover:text-darkGray" role="menuitem">Services</a>
+          <a href="#" aria-label="Read about projects at sunnyside" class="hover:text-darkGray" role="menuitem">Projects</a>
+          <button class="bg-yellow w-1/2 text-veryBlue rounded-full py-4 px-4 font-fraunces uppercase text-base hover:bg-opacity-40 hover:text-white duration-150">Contact</button>
+  
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center">
+        <h1 class="font-fraunces text-white text-center text-4xl md:text-[3.45rem] uppercase p-8 tracking-widest">We are creatives</h1>
+
+        <img src="./images/icon-arrow-down.svg" alt="arrow" class="pt-32 animate-bounce">
+      </div>
+    </header>
+    <section class="">
+      <!-- Tranform your brand -->
+      <div class="flex flex-col-reverse md:flex-row md:h-[80vh]" >
+        <div class="h-[60vh] py-16 px-6 flex flex-col justify-center space-y-8 md:w-1/2 md:pl-24 md:h-full">
+          <h2 class="font-fraunces text-veryBlue text-center text-3xl md:text-5xl md:w-3/4 md:text-left">Transform your brand</h2>
+          <p class="text-xl text-darkGrayBlue text-center md:text-left md:pr-32">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+
+          <div class="flex items-center justify-center md:items-start md:justify-start">
+            <a href="#" class="text-veryBlue uppercase font-fraunces after:block after:content-[''] after:bg-yellow after:opacity-30 hover:after:opacity-100 after:absolute after:bottom-[1px] after:left-0 after:h-[9px] after:duration-150 after:w-full relative after:origin-top-right after:rounded-lg z-30 after:z-[-10]">Learn more</a>
+          </div>
+        </div>
+        <div class="bg-tranform-mobile bg-cover bg-center md:bg-tranform-desktop h-[50vh] md:w-1/2 md:h-full"></div>
+      </div>
+      <!-- Stand out to the right audience -->
+      <div class="flex flex-col md:flex-row md:h-[80vh]" >
+        <div class="bg-standout-mobile bg-cover bg-center md:bg-standout-desktop h-[50vh] md:w-1/2 md:h-full"></div>
+        <div class="h-[60vh] px-6 flex flex-col justify-center space-y-8 md:w-1/2 md:h-full md:pl-24 ">
+          <h2 class="font-fraunces text-veryBlue text-center text-3xl md:text-5xl md:w-3/4 md:text-left">Stand out to the right audience</h2>
+          <p class="text-xl text-darkGrayBlue text-center md:text-left md:pr-32">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+
+          <div class="flex items-center justify-center md:items-start md:justify-start">
+            <a href="#" class="uppercase text-veryBlue font-fraunces after:block after:content-[''] after:bg-red after:opacity-30 hover:after:opacity-100 after:absolute after:bottom-[1px] after:left-0 after:h-[9px] after:duration-150 after:w-full relative after:origin-top-right after:rounded-lg z-30 after:z-[-10]">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Graphic design and photography -->
+      <div class="flex flex-col md:flex-row md:h-[80vh]" >
+        <div class="h-[80vh] bg-graphic-mobile bg-cover bg-center md:bg-graphic-desktop md:w-1/2 md:h-full flex justify-center items-end">
+          <div class="flex flex-col p-4 pb-16 justify-center items-center text-center md:p-14 text-darkCyan space-y-6 md:space-y-0">
+            <h2 class="text-2xl font-fraunces md:p-8 md:text-3xl">Graphic design</h2>
+            <p class="text-lg md:px-20 font-semibold md:text-xl">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+          </div>
+        </div>
+        <div class="h-[80vh] bg-photography-mobile bg-cover bg-center md:bg-photography-desktop md:w-1/2 md:h-full flex justify-center items-end">
+          <div class="flex flex-col p-4 pb-16 justify-center items-center text-center md:p-14 text-darkBlue space-y-6 md:space-y-0">
+            <h2 class="text-2xl font-fraunces md:p-8 md:text-3xl">Photography</h2>
+            <p class="text-lg md:px-20 font-semibold md:text-xl">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="md:h-[90vh] flex flex-col justify-center items-center md:space-y-24 py-16 md:py-0 space-y-10">
+      <h2 class="font-fraunces text-xl text-grayBlue uppercase md:text-3xl tracking-widest text-center py-4">Client Testimonials</h2>
+      <div class="flex flex-col md:flex-row md:w-3/4 space-y-16 md:space-y-0">
+        <!-- #1 -->
+        <div class="flex flex-col items-center text-center space md:w-1/3 space-y-10">
+          <img src="./images/image-emily.jpg" alt="emily" class="w-16 rounded-full">
+          <p class="text-vdarkGrayBlue font-semibold px-4">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <div class="">
+            <h3 class="font-fraunces text-lg">Emily R.</h3>
+            <span class="text-darkGrayBlue font-semibold">Marketing Director</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center text-center space md:w-1/3 space-y-10">
+          <img src="./images/image-thomas.jpg" alt="emily" class="w-16 rounded-full">
+          <p class="text-vdarkGrayBlue font-semibold px-4">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <div class="">
+            <h3 class="font-fraunces text-lg">Thomas S.</h3>
+            <span class="text-darkGrayBlue font-semibold">Chief Operating Officer</span>
+          </div>
+        </div>
+        <div class="flex flex-col items-center text-center space md:w-1/3 space-y-10">
+          <img src="./images/image-jennie.jpg" alt="emily" class="w-16 rounded-full">
+          <p class="text-vdarkGrayBlue font-semibold px-4">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="">
+            <h3 class="font-fraunces text-lg">Jennie F.</h3>
+            <span class="text-darkGrayBlue font-semibold">Business Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="md:h-[65vh] flex flex-col md:flex-row">
+      <div class="md:w-1/2 flex h-[25vh] md:h-full">
+        <div class="w-1/2 bg-gallery-1-mobile md:bg-gallery-1-desktop h-full bg-cover"></div>
+        <div class="w-1/2 bg-gallery-2-mobile md:bg-gallery-2-desktop h-full bg-cover"></div>
+      </div>
+      <div class="md:w-1/2 flex h-[25vh] md:h-full">
+        <div class="w-1/2 bg-gallery-3-mobile md:bg-gallery-3-desktop h-full bg-cover"></div>
+        <div class="w-1/2 bg-gallery-4-mobile md:bg-gallery-4-desktop h-full bg-cover"></div>
+      </div>
+    </section>
+    <footer class="h-[50vh] bg-footer flex flex-col pt-24 items-center space-y-8 ">
+      <img src="./images/logo-copy.svg" alt="" class="w-44"> 
+      <div class="flex space-x-12 text-lg">
+        <a href="#" class="text-cyan font-semibold hover:text-white">About</a>
+        <a href="#" class="text-cyan font-semibold hover:text-white">Services</a>
+        <a href="#" class="text-cyan font-semibold hover:text-white">Projects</a>
+      </div>
+      <div class="flex space-x-6 pt-10">
+        <a id="link" href="#" aria-label="Facebook"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" fill-rule="nonzero"/></svg></a>
+        <a href="#" id="link" aria-label="Instagram"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M10 1.802c2.67 0 2.987.01 4.042.059 2.71.123 3.975 1.409 4.099 4.099.048 1.054.057 1.37.057 4.04 0 2.672-.01 2.988-.057 4.042-.124 2.687-1.387 3.975-4.1 4.099-1.054.048-1.37.058-4.041.058-2.67 0-2.987-.01-4.04-.058-2.718-.124-3.977-1.416-4.1-4.1-.048-1.054-.058-1.37-.058-4.041 0-2.67.01-2.986.058-4.04.124-2.69 1.387-3.977 4.1-4.1 1.054-.048 1.37-.058 4.04-.058zM10 0C7.284 0 6.944.012 5.877.06 2.246.227.227 2.242.061 5.877.01 6.944 0 7.284 0 10s.012 3.057.06 4.123c.167 3.632 2.182 5.65 5.817 5.817 1.067.048 1.407.06 4.123.06s3.057-.012 4.123-.06c3.629-.167 5.652-2.182 5.816-5.817.05-1.066.061-1.407.061-4.123s-.012-3.056-.06-4.122C19.777 2.249 17.76.228 14.124.06 13.057.01 12.716 0 10 0zm0 4.865a5.135 5.135 0 100 10.27 5.135 5.135 0 000-10.27zm0 8.468a3.333 3.333 0 110-6.666 3.333 3.333 0 010 6.666zm5.338-9.87a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z" fill-rule="nonzero"/></svg></a>
+        <a href="#" id="link" aria-label="Twitter"><svg width="20" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M20 2.172a8.192 8.192 0 01-2.357.646 4.11 4.11 0 001.805-2.27 8.22 8.22 0 01-2.606.996A4.096 4.096 0 0013.847.248c-2.65 0-4.596 2.472-3.998 5.037A11.648 11.648 0 011.392 1a4.109 4.109 0 001.27 5.478 4.086 4.086 0 01-1.858-.513c-.045 1.9 1.318 3.679 3.291 4.075a4.113 4.113 0 01-1.853.07 4.106 4.106 0 003.833 2.849A8.25 8.25 0 010 14.658a11.616 11.616 0 006.29 1.843c7.618 0 11.923-6.434 11.663-12.205A8.354 8.354 0 0020 2.172z" fill-rule="nonzero"/></svg></a>
+        <a href="" id="link" aria-label="Pinterest"><svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M10 0C4.477 0 0 4.477 0 10c0 4.237 2.636 7.855 6.356 9.312-.088-.791-.167-2.005.035-2.868.181-.78 1.172-4.97 1.172-4.97s-.299-.6-.299-1.486c0-1.39.806-2.428 1.81-2.428.852 0 1.264.64 1.264 1.408 0 .858-.546 2.14-.828 3.33-.236.995.5 1.807 1.48 1.807 1.778 0 3.144-1.874 3.144-4.58 0-2.393-1.72-4.068-4.176-4.068-2.845 0-4.516 2.135-4.516 4.34 0 .859.331 1.781.745 2.281a.3.3 0 01.069.288l-.278 1.133c-.044.183-.145.223-.335.134-1.249-.581-2.03-2.407-2.03-3.874 0-3.154 2.292-6.052 6.608-6.052 3.469 0 6.165 2.473 6.165 5.776 0 3.447-2.173 6.22-5.19 6.22-1.013 0-1.965-.525-2.291-1.148l-.623 2.378c-.226.869-.835 1.958-1.244 2.621.937.29 1.931.446 2.962.446 5.523 0 10-4.477 10-10S15.523 0 10 0z" fill-rule="nonzero"/></svg></a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
